@@ -8,11 +8,11 @@ const redocusaurus = [
   {
     debug: Boolean(process.env.DEBUG || process.env.CI),
     specs: [
-      {
-        id: 'furo',
-        spec: 'openapi/furo/v1/openapi.yaml',
-        route: '/api/furo/',
-      },
+      // {
+      //   id: 'furo',
+      //   spec: 'openapi/furo/v1/openapi.yaml',
+      //   route: '/api/furo/',
+      // },
     ],
     theme: {
       primaryColor: '#35393d',
@@ -32,21 +32,22 @@ const redocusaurus = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SushiSwap',
+  title: 'Sushi Docs',
   tagline: 'Documentation Portal',
-  url: 'https://docs.sushi.com/',
+  url: 'https://docs.sushi.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'sushiswap',
-  projectName: 'sushi-docs',
+  organizationName: 'sushi-labs',
+  projectName: 'docs',
   presets: [
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/sushiswap/sushi-docs/edit/master',
           versions: {
@@ -71,60 +72,39 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'SushiSwap',
+        title: 'Sushi Docs',
         logo: {
           alt: 'Sushiswap Logo',
-          src: 'img/sushilogo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'dropdown',
-            label: 'API',
+            to: '/concepts/overview',
+            label: 'Concepts',
             position: 'left',
-            items: [
-              {
-                label: 'Furo',
-                href: '/api/furo',
-              },
-            ],
           },
           {
-            to: '/docs/Developers/Deployment%20Addresses',
+            to: '/contracts/overview',
             label: 'Contracts',
             position: 'left',
           },
           {
-            to: '/docs/Developers/Subgraphs/Overview',
+            to: '/subgraphs/v3',
             label: 'Subgraphs',
             position: 'left',
           },
           {
-            to: '/docs/Developers/Packages/Overview',
-            label: 'Packages',
-            position: 'left',
-          },
-          {
-            to: '/docs/Governance/Current%20Governance%20Model',
-            label: 'Governance',
-            position: 'left',
-          },
-          {
-            to: '/docs/Ecosystem/Build%20on%20Sushiswap',
-            label: 'Ecosystem',
-            position: 'left',
-          },
-          {
-            to: '/docs/Multichain/Canonical%20Sushi%20Tokens',
-            label: 'Multichain',
-            position: 'left',
-          },
-          {
-            to: '/docs/FAQ/General%20FAQ',
-            label: 'FAQ',
+            href: 'https://app.swaggerhub.com/apis/sushi-labs/sushi/5.0.0',
+            label: 'API Reference',
             position: 'right',
           },
           {
-            href: 'https://github.com/sushiswap',
+            href: 'https://www.npmjs.com/package/sushi',
+            label: 'SDK',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/sushi-labs',
             label: 'GitHub',
             position: 'right',
           },
@@ -137,20 +117,8 @@ const config = {
             title: 'GitHub',
             items: [
               {
-                label: 'sushiswap-contracts',
-                href: 'https://github.com/sushiswap',
-              },
-              {
-                label: 'sushiswap-interface',
-                href: 'https://github.com/sushiswap/sushiswap-interface',
-              },
-              {
-                label: 'sushiswap-sdk',
-                href: 'https://github.com/sushiswap/sdk',
-              },
-              {
-                label: 'Deployment Addresses',
-                to: '/docs/Developers/Deployment%20Addresses',
+                label: 'Sushi Labs',
+                href: 'https://github.com/sushi-labs',
               },
             ],
           },
@@ -159,23 +127,15 @@ const config = {
             items: [
               {
                 label: 'Home',
-                href: 'https://www.sushi.com/',
+                href: 'https://www.sushi.com',
               },
               {
-                label: 'App',
-                href: 'https://app.sushi.com/en/swap',
+                label: 'Explore',
+                href: 'https://www.sushi.com/explore',
               },
               {
-                label: 'Analytics',
-                href: 'https://app.sushi.com/analytics?chainId=1',
-              },
-              {
-                label: 'Token Lists',
-                href: 'https://app.sushi.com/analytics/tokens?chainId=1',
-              },
-              {
-                label: 'Press Kit',
-                href: 'https://drive.google.com/drive/folders/1MOCy3IOtLKQD39ox0mgeLsuEhckCg_Tm',
+                label: 'Media Kit',
+                href: 'https://sushiswap.notion.site/Sushi-2-0-Media-Kit-da7d46dec1bc461e82f1efe47e3efd97',
               },
             ],
           },
@@ -183,12 +143,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Governance',
-                href: 'https://forum.sushi.com/',
+                label: 'Forum',
+                href: 'https://forum.sushi.com',
               },
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/NVPXN4e',
+                href: 'https://www.sushi.com/discord',
               },
               {
                 label: 'Twitter',
@@ -196,7 +156,7 @@ const config = {
               },
               {
                 label: 'Blog',
-                href: 'https://medium.com/sushiswap-org',
+                href: 'https://www.sushi.com/blogs',
               },
             ],
           },
