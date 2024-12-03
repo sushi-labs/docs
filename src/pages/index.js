@@ -9,60 +9,51 @@ import styled from '@emotion/styled';
 
 export const quickLinks = [
   {
-    title: 'What Is SushiSwap',
+    title: 'What Is Sushi',
     href: '#',
     icon: InformationCircleIcon,
-    to: './docs/intro',
-    text: `Learn about the core concepts of the SushiSwap Protocol. Swaps, Pools, Lending and more.`,
+    to: './concepts/overview',
+    text: `Learn about the core concepts of the Sushi ecosystem, governance and products.`,
   },
   {
-    title: 'Developers',
+    title: 'Integrate Sushi',
     href: '#',
     icon: InformationCircleIcon,
-    to: './docs/Developers/Overview',
-    text: `Learn about the architecture of the SushiSwap smart contracts and how to build on top of the protocol.`,
+    to: './contracts/overview', 
+    text: `Explore the SushiSwap contract addresses across multiple networks and their respective details.`,
   },
   {
     title: 'Tutorials',
     href: '#',
     icon: InformationCircleIcon,
-    to: './docs/Developers/Overview',
+    to: 'https://www.sushi.com/academy',
     text: `Learn step by step how to use the SushiSwap suite of services and how to leverage them to your advantage.`,
   },
 ];
 
 export const Guides = [
   {
-    title: 'AMM Quick Start',
-    text: 'Learn how to interact with the SushiSwap AMM',
-    to: './docs/Products/Classic%20AMM/Overview',
+    title: 'Sushi Academy',
+    text: 'Everything you need to know in one place',
+    to: 'https://www.sushi.com/academy',
   },
   {
-    title: 'Furo Quick Start',
-    text: 'Learn how to create token vestings and streams',
-    to: './docs/Products/Furo%20Streams%20&%20Vesting/Overview',
+    title: 'FAQ',
+    text: 'Frequently asked questions',
+    to: 'https://www.sushi.com/faq',
   },
-  {
-    title: 'Subgraph Quick Start',
-    text: 'Learn how to interact with the Sushi suite of subgraphs',
-    to: './docs/Developers/Subgraphs/Overview',
-  },
+  // 
 ];
 
 export const github = [
   {
     title: 'sushiswap',
-    href: 'https://github.com/sushiswap',
+    href: 'https://github.com/sushi-labs/sushiswap',
     icon: CodeIcon,
   },
   {
-    title: 'sushiswap apps',
-    href: 'https://github.com/sushiswap/sushiswap',
-    icon: CodeIcon,
-  },
-  {
-    title: 'Deployment Addresses',
-    href: './docs/Developers/Deployment%20Addresses',
+    title: 'sdk',
+    href: 'https://www.npmjs.com/package/sushi',
     icon: CodeIcon,
   },
 ];
@@ -198,8 +189,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`SushiSwap Docs`}
-      description="Official Documentation for the SushiSwap Protocol"
+      title={`Sushi Docs`}
+      description="Official Documentation for Sushi"
     >
       <Container>
         <DocsHeader>
@@ -212,7 +203,7 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <h1 style={{ fontWeight: '700' }}> SushiSwap Docs</h1>
+            <h1 style={{ fontWeight: '700' }}> Sushi Docs</h1>
           </div>
           <StyledTitleImage
             alt=""
