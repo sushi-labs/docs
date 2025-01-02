@@ -66,3 +66,5 @@ BLAST: https://api.goldsky.com/api/public/project_clslspm3c0knv01wvgfb2fqyq/subg
 SKALE_EUROPA: https://elated-tan-skat-graph.skalenodes.com:8000/subgraphs/name/sushi/blocks-skale-europa
 
 ROOTSTOCK: https://api.goldsky.com/api/public/project_clslspm3c0knv01wvgfb2fqyq/subgraphs/sushiswap/blocks-rootstock/gn
+
+SONIC: https://gateway-arbitrum.network.thegraph.com/api/${API_KEY}/subgraphs/id/QmdAhLuQAv9GfsWctJ8R36bYr6Gdp2GgUGSR2EDUNfb96h

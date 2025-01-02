@@ -49,3 +49,4 @@ sidebar_position: 2
 | TAIKO            | 0xf2614A233c7C3e7f08b1F887Ba133a13f1eb2c55 |
 | ZKLINK           | 0x9e55e562D40FD01f38cD4057e632352fE0758F16 |
 | APE              | 0xf2614A233c7C3e7f08b1F887Ba133a13f1eb2c55 |
+| SONIC            | 0xf2614A233c7C3e7f08b1F887Ba133a13f1eb2c55 |
